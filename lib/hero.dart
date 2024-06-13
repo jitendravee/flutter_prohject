@@ -1,436 +1,466 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter/cupertino.dart';
+
 class Herosub extends StatelessWidget {
   const Herosub({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 6),
-      padding: const EdgeInsets.only(left: 12, top: 25, bottom: 28, right: 12),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        color: const Color.fromARGB(255, 255, 255, 255),
-      ),
+      margin: const EdgeInsets.symmetric(horizontal: 0),
       child: Column(
         children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  color: const Color.fromARGB(255, 126, 66, 255),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        const Icon(Icons.arrow_circle_left,
-                            color: Colors.white),
-                        const SizedBox(width: 5),
-                        const Text(
-                          'Total Returns',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 15),
-                    const Text(
-                      '₹2000.34',
-                      style: TextStyle(
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                    ),
-                    const SizedBox(height: 15),
-                    const Text(
-                      'June 30 - Today',
-                      style: TextStyle(fontSize: 15, color: Colors.white),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(width: 15),
-              Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  color: Color.fromARGB(254, 255, 255, 255),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        const Icon(Icons.arrow_drop_down_circle_rounded,
-                            color: Colors.black),
-                        const SizedBox(width: 0),
-                        const Text(
-                          'Total Invested',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.black,
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 15),
-                    const Text(
-                      '₹2000.34',
-                      style: TextStyle(
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(255, 126, 66, 255),
-                      ),
-                    ),
-                    const SizedBox(height: 15),
-                    const Text(
-                      'June 30 - Today',
-                      style: TextStyle(fontSize: 15, color: Colors.black),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 20),
-          RichText(
-            text: const TextSpan(
-              text: 'Quick Tip:',
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
-              children: <TextSpan>[
-                TextSpan(
-                  text:
-                      ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
-                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300),
-                ),
-              ],
-            ),
-          ),
           Container(
-            margin: const EdgeInsets.all(20),
-            padding:
-                const EdgeInsets.only(left: 18, top: 20, bottom: 20, right: 18),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(15),
-              color: Colors.white,
-            ),
+            margin: const EdgeInsets.symmetric(horizontal: 29, vertical: 17),
             child: Row(
               children: [
                 Container(
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                  color: const Color.fromARGB(255, 126, 66, 255),
-                  child: const Text(
-                    'Live Events',
-                    style: TextStyle(
-                      fontSize: 19,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.white,
-                    ),
+                      const EdgeInsets.symmetric(vertical: 34, horizontal: 14),
+                  decoration: BoxDecoration(
+                      color: const Color.fromRGBO(126, 86, 218, 1),
+                      borderRadius: BorderRadius.circular(12)),
+                  child: const Column(
+                    children: [
+                      Row(
+                        children: [
+                          Icon(
+                            CupertinoIcons.arrow_down_left_circle_fill,
+                            color: Colors.white,
+                          ),
+                          SizedBox(
+                            width: 4,
+                          ),
+                          Text(
+                            'Total Returns',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w500),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        '₹2000.34',
+                        style: TextStyle(
+                            fontSize: 24,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w600),
+                      ),
+                      SizedBox(
+                        height: 13,
+                      ),
+                      Text(
+                        'June 30-Today',
+                        style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.white),
+                      )
+                    ],
                   ),
                 ),
-                const SizedBox(width: 28),
+                Container(
+                  padding: const EdgeInsets.only(
+                      top: 34, bottom: 34, left: 14, right: 14),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      color: Colors.white),
+                  child: const Column(
+                    children: [
+                      Row(
+                        children: [
+                          Icon(
+                            CupertinoIcons.arrowtriangle_down_square,
+                            color: Color.fromRGBO(126, 86, 218, 1),
+                          ),
+                          SizedBox(
+                            width: 4,
+                          ),
+                          Text(
+                            'Total Invested',
+                            overflow: TextOverflow.clip,
+                            style: TextStyle(
+                                fontSize: 17, fontWeight: FontWeight.w500),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        '₹2000.34',
+                        style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.w600,
+                            color: Color.fromRGBO(126, 86, 218, 1)),
+                      ),
+                      SizedBox(
+                        height: 13,
+                      ),
+                      Text(
+                        'June 30-Today',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.symmetric(vertical: 3, horizontal: 23),
+            child: RichText(
+              text: const TextSpan(
+                text: 'Quick Tip:',
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+                children: <TextSpan>[
+                  TextSpan(
+                    text:
+                        ' Lorem ipsum dolor sit amet consectetur. Lorem graa volutpat dui sollicitudin sociis feugiat diam to dui sollicitudin.',
+                    style: TextStyle(fontSize: 12, fontWeight: FontWeight.w200),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 12, horizontal: 35),
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 4),
+            decoration: BoxDecoration(
+                color: Colors.white, borderRadius: BorderRadius.circular(25)),
+            child: Row(
+              children: [
+                Container(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+                  decoration: BoxDecoration(
+                      color: const Color.fromRGBO(126, 86, 218, 1),
+                      borderRadius: BorderRadius.circular(25)),
+                  child: const Text(
+                    'Live Events ',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400),
+                  ),
+                ),
+                const SizedBox(
+                  width: 34,
+                ),
                 const Text(
                   'Closed Events',
                   style: TextStyle(
-                    fontSize: 19,
-                    fontWeight: FontWeight.w500,
-                    color: Color.fromARGB(255, 126, 66, 255),
+                      color: Color.fromRGBO(126, 86, 218, 1),
+                      fontSize: 16,
+                      fontWeight: FontWeight.w400),
+                )
+              ],
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 0),
+            padding:
+                const EdgeInsets.only(top: 12, bottom: 44, right: 30, left: 30),
+            decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16))),
+            child: Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(0),
+                  child: const Row(
+                    children: [
+                      Text(
+                        'Challenge Name',
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w500,
+                            color: Color.fromRGBO(126, 86, 218, 1)),
+                      ),
+                      SizedBox(
+                        width: 45,
+                      ),
+                      Text(
+                        'Average',
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w500,
+                            color: Color.fromRGBO(126, 86, 218, 1)),
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        '|Total Returns',
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w500,
+                            color: Color.fromRGBO(126, 86, 218, 1)),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 0),
+                  child: const Column(
+                    children: [
+                      Row(
+                        children: [
+                          SizedBox(
+                            height: 54,
+                          ),
+                          Icon(Icons.account_circle_sharp),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            'Lorem Ipsum dolor',
+                            style: TextStyle(
+                                fontSize: 13, fontWeight: FontWeight.w500),
+                          ),
+                          SizedBox(
+                            width: 34,
+                          ),
+                          Text(
+                            '₹2.78',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.w500),
+                          ),
+                          SizedBox(
+                            width: 28,
+                          ),
+                          Text(
+                            '+ ₹200',
+                            style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                                color: Color.fromRGBO(126, 86, 218, 1)),
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          SizedBox(
+                            width: 30,
+                          ),
+                          Text(
+                            'Qty: 20',
+                            style: TextStyle(
+                                fontSize: 12, fontWeight: FontWeight.w200),
+                          ),
+                          SizedBox(
+                            width: 6,
+                          ),
+                          Text(
+                            '| Invest: ₹20',
+                            style: TextStyle(
+                                fontSize: 12, fontWeight: FontWeight.w200),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 0),
+                  child: const Column(
+                    children: [
+                      Row(
+                        children: [
+                          SizedBox(
+                            height: 54,
+                          ),
+                          Icon(Icons.account_circle_sharp),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            'Lorem Ipsum dolor',
+                            style: TextStyle(
+                                fontSize: 13, fontWeight: FontWeight.w500),
+                          ),
+                          SizedBox(
+                            width: 34,
+                          ),
+                          Text(
+                            '₹2.78',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.w500),
+                          ),
+                          SizedBox(
+                            width: 28,
+                          ),
+                          Text(
+                            '+ ₹200',
+                            style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                                color: Color.fromRGBO(126, 86, 218, 1)),
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          SizedBox(
+                            width: 30,
+                          ),
+                          Text(
+                            'Qty: 20',
+                            style: TextStyle(
+                                fontSize: 12, fontWeight: FontWeight.w200),
+                          ),
+                          SizedBox(
+                            width: 6,
+                          ),
+                          Text(
+                            '| Invest: ₹20',
+                            style: TextStyle(
+                                fontSize: 12, fontWeight: FontWeight.w200),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 0),
+                  child: const Column(
+                    children: [
+                      Row(
+                        children: [
+                          SizedBox(
+                            height: 54,
+                          ),
+                          Icon(Icons.account_circle_sharp),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            'Lorem Ipsum dolor',
+                            style: TextStyle(
+                                fontSize: 13, fontWeight: FontWeight.w500),
+                          ),
+                          SizedBox(
+                            width: 34,
+                          ),
+                          Text(
+                            '₹2.78',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.w500),
+                          ),
+                          SizedBox(
+                            width: 28,
+                          ),
+                          Text(
+                            '+ ₹200',
+                            style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                                color: Color.fromRGBO(126, 86, 218, 1)),
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          SizedBox(
+                            width: 30,
+                          ),
+                          Text(
+                            'Qty: 20',
+                            style: TextStyle(
+                                fontSize: 12, fontWeight: FontWeight.w200),
+                          ),
+                          SizedBox(
+                            width: 6,
+                          ),
+                          Text(
+                            '| Invest: ₹20',
+                            style: TextStyle(
+                                fontSize: 12, fontWeight: FontWeight.w200),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 0),
+                  child: const Column(
+                    children: [
+                      Row(
+                        children: [
+                          SizedBox(
+                            height: 54,
+                          ),
+                          Icon(Icons.account_circle_sharp),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            'Lorem Ipsum dolor',
+                            style: TextStyle(
+                                fontSize: 13, fontWeight: FontWeight.w500),
+                          ),
+                          SizedBox(
+                            width: 34,
+                          ),
+                          Text(
+                            '₹2.78',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.w500),
+                          ),
+                          SizedBox(
+                            width: 28,
+                          ),
+                          Text(
+                            '+ ₹200',
+                            style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                                color: Color.fromRGBO(126, 86, 218, 1)),
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          SizedBox(
+                            width: 30,
+                          ),
+                          Text(
+                            'Qty: 20',
+                            style: TextStyle(
+                                fontSize: 12, fontWeight: FontWeight.w200),
+                          ),
+                          SizedBox(
+                            width: 6,
+                          ),
+                          Text(
+                            '| Invest: ₹20',
+                            style: TextStyle(
+                                fontSize: 12, fontWeight: FontWeight.w200),
+                          )
+                        ],
+                      )
+                    ],
                   ),
                 ),
               ],
             ),
-          ),
-          Container(
-            margin: const EdgeInsets.only(top: 5),
-            padding: const EdgeInsets.only(top: 5, right: 4, left: 4),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(15),
-              color: Colors.white,
-            ),
-            child: Row(
-              children: [
-                Text(
-                  'Challenge Name',
-                  style: TextStyle(fontSize: 13, fontWeight: FontWeight.w500),
-                ),
-                SizedBox(
-                  width: 102,
-                ),
-                Text(
-                  'Average',
-                  style: TextStyle(fontSize: 13, fontWeight: FontWeight.w500),
-                ),
-                SizedBox(
-                  width: 9,
-                ),
-                Text(
-                  '|Total Returns',
-                  style: TextStyle(fontSize: 13, fontWeight: FontWeight.w500),
-                ),
-              ],
-            ),
-          ),
-          Container(
-            margin: const EdgeInsets.only(top: 5),
-            padding: const EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(15),
-              color: Colors.white,
-            ),
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    SizedBox(
-                      height: 40,
-                    ),
-                    Icon(Icons.emoji_emotions),
-                    SizedBox(
-                      width: 7,
-                    ),
-                    Expanded(
-                      child: Text(
-                        'Lorem hdshdjsssd',
-                        style: TextStyle(
-                            fontSize: 12, fontWeight: FontWeight.w500),
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Text(
-                      '₹2.78',
-                      style:
-                          TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    SizedBox(
-                      width: 9,
-                    ),
-                    Text(
-                      '+ ₹200',
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Color.fromARGB(255, 126, 66, 255),
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: [
-                    SizedBox(
-                      height: 40,
-                    ),
-                    Icon(Icons.emoji_emotions),
-                    SizedBox(
-                      width: 7,
-                    ),
-                    Expanded(
-                      child: Text(
-                        'Lorem hdshdjsssd',
-                        style: TextStyle(
-                            fontSize: 12, fontWeight: FontWeight.w500),
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Text(
-                      '₹2.78',
-                      style:
-                          TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    SizedBox(
-                      width: 9,
-                    ),
-                    Text(
-                      '+ ₹200',
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Color.fromARGB(255, 126, 66, 255),
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: [
-                    SizedBox(
-                      height: 40,
-                    ),
-                    Icon(Icons.emoji_emotions),
-                    SizedBox(
-                      width: 7,
-                    ),
-                    Expanded(
-                      child: Text(
-                        'Lorem hdshdjsssd',
-                        style: TextStyle(
-                            fontSize: 12, fontWeight: FontWeight.w500),
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Text(
-                      '₹2.78',
-                      style:
-                          TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    SizedBox(
-                      width: 9,
-                    ),
-                    Text(
-                      '+ ₹200',
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Color.fromARGB(255, 126, 66, 255),
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: [
-                    SizedBox(
-                      height: 40,
-                    ),
-                    Icon(Icons.emoji_emotions),
-                    SizedBox(
-                      width: 7,
-                    ),
-                    Expanded(
-                      child: Text(
-                        'Lorem hdshdjsssd',
-                        style: TextStyle(
-                            fontSize: 12, fontWeight: FontWeight.w500),
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Text(
-                      '₹2.78',
-                      style:
-                          TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    SizedBox(
-                      width: 9,
-                    ),
-                    Text(
-                      '+ ₹200',
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Color.fromARGB(255, 126, 66, 255),
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: [
-                    SizedBox(
-                      height: 40,
-                    ),
-                    Icon(Icons.emoji_emotions),
-                    SizedBox(
-                      width: 7,
-                    ),
-                    Expanded(
-                      child: Text(
-                        'Lorem hdshdjsssd',
-                        style: TextStyle(
-                            fontSize: 12, fontWeight: FontWeight.w500),
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Text(
-                      '₹2.78',
-                      style:
-                          TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    SizedBox(
-                      width: 9,
-                    ),
-                    Text(
-                      '+ ₹200',
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Color.fromARGB(255, 126, 66, 255),
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: [
-                    SizedBox(
-                      height: 40,
-                    ),
-                    Icon(Icons.emoji_emotions),
-                    SizedBox(
-                      width: 7,
-                    ),
-                    Expanded(
-                      child: Text(
-                        'Lorem hdshdjsssd',
-                        style: TextStyle(
-                            fontSize: 12, fontWeight: FontWeight.w500),
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Text(
-                      '₹2.78',
-                      style:
-                          TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    SizedBox(
-                      width: 9,
-                    ),
-                    Text(
-                      '+ ₹200',
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Color.fromARGB(255, 126, 66, 255),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
+          )
         ],
       ),
     );
