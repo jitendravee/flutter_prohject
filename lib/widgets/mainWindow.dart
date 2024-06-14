@@ -5,6 +5,7 @@ class MainWindow extends StatelessWidget {
   final Color color;
   final Color colorr;
   final Color colorrr;
+  final Color colorrrr;
   final dynamic icon;
   final BorderRadiusGeometry value;
   final String text;
@@ -14,6 +15,7 @@ class MainWindow extends StatelessWidget {
     required this.color,
     required this.colorr,
     required this.colorrr,
+    required this.colorrrr,
     required this.value,
     required this.icon,
     required this.text1,
@@ -23,67 +25,70 @@ class MainWindow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 22.5, horizontal: 13.5),
-      margin: const EdgeInsets.symmetric(vertical: 3),
-      decoration: BoxDecoration(
-        borderRadius: value,
-        color: color,
-      ),
-      height: null,
-      width: 125,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
+        padding: const EdgeInsets.only(
+            top: 22.5, right: 13.5, left: 13.5, bottom: 22.5),
+        margin: const EdgeInsets.only(),
+        decoration: BoxDecoration(
+            borderRadius: value, color: color, border: Border.all(width: 0.1)),
+        child: Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Icon(
-                icon,
-                size: 34,
-                color: colorrr,
+              // height: 25.5,
+              // width: 66.75,
+
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Icon(
+                    icon,
+                    size: 38,
+                    color: colorrr,
+                  ),
+                  const SizedBox(
+                    width: 3,
+                  ),
+                  Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          text,
+                          maxLines: 1,
+                          style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 15,
+                              color: colorr),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        Text(
+                          text1,
+                          style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 15,
+                              color: colorr),
+                        ),
+                      ]),
+                ],
               ),
               const SizedBox(
-                width: 3,
+                height: 18,
               ),
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Text(
-                  text,
-                  // maxLines: 1,
-                  style: TextStyle(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 10.5,
-                      color: colorr),
-                  overflow: TextOverflow.ellipsis,
-                ),
-                Text(
-                  text1,
-                  style: TextStyle(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 10.5,
-                      color: colorr),
-                ),
-              ]),
+              Text(
+                ' ₹2000.34',
+                style: TextStyle(
+                    fontWeight: FontWeight.w600, fontSize: 24, color: colorrr),
+              ),
+              const SizedBox(
+                height: 18,
+              ),
+              Text(
+                '  June 30 - Today',
+                style: TextStyle(
+                    fontWeight: FontWeight.w400, fontSize: 10, color: colorr),
+              ),
             ],
           ),
-          const SizedBox(
-            height: 18,
-          ),
-          Text(
-            ' ₹2000.34',
-            style: TextStyle(
-                fontWeight: FontWeight.w600, fontSize: 18, color: colorr),
-          ),
-          const SizedBox(
-            height: 18,
-          ),
-          Text(
-            '  June 30 - Today',
-            style: TextStyle(
-                fontWeight: FontWeight.w400, fontSize: 7.5, color: colorr),
-          ),
-        ],
-      ),
-    );
+        ));
   }
 }

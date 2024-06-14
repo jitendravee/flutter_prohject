@@ -5,6 +5,31 @@ class TextTip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+        padding: const EdgeInsets.symmetric(horizontal: 21),
+        child: Expanded(
+            child: Center(
+                child: Column(
+          children: [
+            RichText(
+              text: const TextSpan(
+                text: 'Quick Tip:',
+                style: TextStyle(
+                  fontSize: 7.5,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+                children: <TextSpan>[
+                  TextSpan(
+                    text:
+                        ' Lorem ipsum dolor sit amet gdwug wgduw wewqg hsdjs consectetur. Lorem graa volutpat dui sollicitudin sociis feugiat diam to dui sollicitudin.',
+                    style:
+                        TextStyle(fontSize: 7.5, fontWeight: FontWeight.w300),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ))));
   }
 }
