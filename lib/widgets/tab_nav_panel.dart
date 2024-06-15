@@ -8,13 +8,13 @@ class TabNavPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.symmetric(horizontal: 36),
+        padding: const EdgeInsets.symmetric(horizontal: 36),
         child: Container(
             padding: const EdgeInsets.only(
                 top: 13.32, bottom: 14, right: 11.84, left: 11.84),
             decoration: BoxDecoration(
               color: Pallete.white1,
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(75),
             ),
             child: const Expanded(
               child: Center(

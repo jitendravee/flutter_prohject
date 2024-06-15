@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:skills/theme.dart';
 import 'package:skills/widgets/mainWindow.dart';
+import 'package:flutter/cupertino.dart';
 
 class InvestmentCard extends StatelessWidget {
   const InvestmentCard({super.key});
@@ -21,7 +22,7 @@ class InvestmentCard extends StatelessWidget {
                   colorrr: Pallete.white1,
                   colorrrr: Pallete.white1,
                   value: BorderRadius.all(Radius.circular(12)),
-                  icon: Icons.access_alarm,
+                  icon: CupertinoIcons.arrow_down_left_circle_fill,
                   text: 'Total ',
                   text1: 'Returns',
                 )),

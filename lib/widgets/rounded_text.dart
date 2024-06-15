@@ -18,7 +18,7 @@ class RoundedText extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 7.5, horizontal: 18),
       decoration: BoxDecoration(
         color: buttonColor,
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(75),
       ),
       child: Text(
         buttonName,

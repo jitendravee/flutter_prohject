@@ -19,8 +19,10 @@ class InvestmentDetailCard extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  const Icon(
-                    Icons.access_alarm,
+                  Image.asset(
+                    'lib/images/logo.png',
+                    height: 21,
+                    width: 21,
                   ),
                   const SizedBox(width: 5),
                   Container(

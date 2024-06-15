@@ -9,34 +9,36 @@ class AppBarMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        shape: BorderDirectional(
-            bottom: BorderSide(color: Pallete.white1, width: 1)),
-        leading: const Icon(
-          Icons.arrow_back,
-          size: 30,
-        ),
-        title: const Text(
-          'My Activity',
-          style: TextStyle(fontSize: 26, fontWeight: FontWeight.w300),
-        ),
-        actions: <Widget>[
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.share,
-              size: 30,
-            ),
+          shape: BorderDirectional(
+              bottom: BorderSide(color: Pallete.white1, width: 1)),
+          leading: const Icon(
+            Icons.arrow_back,
+            size: 30,
           ),
-          IconButton(
+          title: const Text(
+            'My Activity',
+            style: TextStyle(fontSize: 26, fontWeight: FontWeight.w300),
+          ),
+          actions: <Widget>[
+            IconButton(
               onPressed: () {},
               icon: const Icon(
-                Icons.more_vert,
+                Icons.share,
                 size: 30,
-              ))
-        ],
+              ),
+            ),
+            IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.more_vert,
+                  size: 30,
+                ))
+          ]),
+      body: const Padding(
+        padding: EdgeInsets.symmetric(vertical: 4.0),
+        child: HomePage(),
       ),
-      body: const HomePage(),
-      backgroundColor: Color.fromRGBO(250, 249, 243, 1),
+      backgroundColor: const Color.fromRGBO(250, 249, 243, 1),
     );
   }
 }

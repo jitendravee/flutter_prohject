@@ -13,8 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Hey Assitent',
-      theme:
-          ThemeData(scaffoldBackgroundColor: Color.fromRGBO(250, 249, 243, 1)),
+      theme: ThemeData(scaffoldBackgroundColor: Color(0xFDFDFC)),
       home: const AppBarMenu(),
     );
   }

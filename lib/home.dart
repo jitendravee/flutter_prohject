@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Color.fromRGBO(250, 249, 24, 1),
+        color: Color(0xFDFDFC),
         child: const Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
