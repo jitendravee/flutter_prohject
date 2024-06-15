@@ -8,7 +8,7 @@ class InvestmentDetailCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 9),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           border: Border(bottom: BorderSide(width: 1, color: Colors.grey))),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -39,7 +39,6 @@ class InvestmentDetailCard extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(width: 10),
               const Text(
                 '₹2.78',
                 style: TextStyle(fontSize: 9, fontWeight: FontWeight.w500),

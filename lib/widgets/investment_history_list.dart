@@ -25,33 +25,31 @@ class InvestmentHistory extends StatelessWidget {
                 children: [
                   Text(
                     'Challenge Name',
-                    style: TextStyle(fontWeight: FontWeight.w400, fontSize: 12),
+                    style: TextStyle(fontWeight: FontWeight.w400, fontSize: 13),
                   ),
-                  Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          'Average',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w400, fontSize: 12),
-                        ),
-                        SizedBox(
-                          width: 4,
-                        ),
-                        Text(
-                          '|',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w200, fontSize: 12),
-                        ),
-                        SizedBox(
-                          width: 4,
-                        ),
-                        Text(
-                          'Total Returns',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w400, fontSize: 12),
-                        ),
-                      ])
+                  Row(children: [
+                    Text(
+                      'Average',
+                      style:
+                          TextStyle(fontWeight: FontWeight.w400, fontSize: 13),
+                    ),
+                    SizedBox(
+                      width: 7,
+                    ),
+                    Text(
+                      '|',
+                      style:
+                          TextStyle(fontWeight: FontWeight.w200, fontSize: 13),
+                    ),
+                    SizedBox(
+                      width: 4,
+                    ),
+                    Text(
+                      'Total Returns',
+                      style:
+                          TextStyle(fontWeight: FontWeight.w400, fontSize: 12),
+                    ),
+                  ])
                 ],
               ),
               InvestmentDetailCard(),

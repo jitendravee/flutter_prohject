@@ -23,14 +23,14 @@ class AppBarMenu extends StatelessWidget {
             IconButton(
               onPressed: () {},
               icon: const Icon(
-                Icons.share,
+                Icons.share_outlined,
                 size: 30,
               ),
             ),
             IconButton(
                 onPressed: () {},
                 icon: const Icon(
-                  Icons.more_vert,
+                  Icons.more_vert_outlined,
                   size: 30,
                 ))
           ]),
