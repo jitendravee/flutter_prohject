@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:skills/theme.dart';
+import 'package:skills/widgets/investment_detail_card.dart';
 
 class InvestmentHistory extends StatelessWidget {
   const InvestmentHistory({super.key});
@@ -12,29 +13,39 @@ class InvestmentHistory extends StatelessWidget {
       child: const Column(
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
                 'Challenge Name',
                 style: TextStyle(fontWeight: FontWeight.w400, fontSize: 12),
               ),
-              SizedBox(
-                width: 44,
-              ),
-              Text(
-                'Average',
-                style: TextStyle(fontWeight: FontWeight.w400, fontSize: 12),
-              ),
-              Text(
-                '|',
-                style: TextStyle(fontWeight: FontWeight.w200, fontSize: 12),
-              ),
-              Text(
-                'Total Returns',
-                style: TextStyle(fontWeight: FontWeight.w400, fontSize: 12),
-              ),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+                Text(
+                  'Average',
+                  style: TextStyle(fontWeight: FontWeight.w400, fontSize: 12),
+                ),
+                SizedBox(
+                  width: 4,
+                ),
+                Text(
+                  '|',
+                  style: TextStyle(fontWeight: FontWeight.w200, fontSize: 12),
+                ),
+                SizedBox(
+                  width: 4,
+                ),
+                Text(
+                  'Total Returns',
+                  style: TextStyle(fontWeight: FontWeight.w400, fontSize: 12),
+                ),
+              ])
             ],
-          )
+          ),
+          InvestmentDetailCard(),
+          InvestmentDetailCard(),
+          InvestmentDetailCard(),
+          InvestmentDetailCard(),
         ],
       ),
     );

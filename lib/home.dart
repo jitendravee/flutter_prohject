@@ -15,6 +15,7 @@ class HomePage extends StatelessWidget {
     return Container(
         color: Color.fromRGBO(250, 249, 24, 1),
         child: const Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             SizedBox(
               height: 23,
@@ -32,8 +33,6 @@ class HomePage extends StatelessWidget {
               height: 23,
             ),
             InvestmentHistory(),
-            InvestmentPanel(),
-            InvestmentDetailCard(),
           ],
         ));
   }
