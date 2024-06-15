@@ -48,7 +48,7 @@ class InvestmentDetailCard extends StatelessWidget {
                 '+₹200',
                 style: TextStyle(
                     fontSize: 9,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w700,
                     color: Pallete.purple1),
               ),
             ],

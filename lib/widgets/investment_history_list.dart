@@ -9,11 +9,15 @@ class InvestmentHistory extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         padding: const EdgeInsets.symmetric(horizontal: 21, vertical: 18),
-        decoration: const BoxDecoration(color: Pallete.white1),
-        child: Expanded(
+        decoration: const BoxDecoration(
+            color: Pallete.white1,
+            borderRadius: BorderRadius.only(
+                topRight: Radius.circular(18), topLeft: Radius.circular(18))),
+        child: const Expanded(
             child: SizedBox(
           height: 300,
-          child: const Column(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:skills/theme.dart';
 
 class MainWindow extends StatelessWidget {
   final Color color;
   final Color colorr;
   final Color colorrr;
   final Color colorrrr;
-  final dynamic icon;
+  final String icon;
   final BorderRadiusGeometry value;
   final String text;
   final String text1;
@@ -41,10 +40,11 @@ class MainWindow extends StatelessWidget {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Icon(
+                  Image.asset(
                     icon,
-                    size: 38,
-                    color: colorrr,
+                    // color: colorrr,
+                    height: 36,
+                    width: 36,
                   ),
                   const SizedBox(
                     width: 3,

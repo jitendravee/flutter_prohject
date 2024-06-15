@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:skills/home.dart';
+import 'package:skills/widgets/home.dart';
 import 'package:skills/theme.dart';
 
 class AppBarMenu extends StatelessWidget {
@@ -9,7 +9,7 @@ class AppBarMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          shape: BorderDirectional(
+          shape: const BorderDirectional(
               bottom: BorderSide(color: Pallete.white1, width: 1)),
           leading: const Icon(
             Icons.arrow_back,
