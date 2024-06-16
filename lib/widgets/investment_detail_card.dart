@@ -7,7 +7,7 @@ class InvestmentDetailCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 10.5),
+      padding: const EdgeInsets.only(top: 12, bottom: 12, right: 10),
       decoration: const BoxDecoration(
           border: Border(bottom: BorderSide(width: 1, color: Colors.grey))),
       child: Column(

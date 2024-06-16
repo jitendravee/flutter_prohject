@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:skills/theme.dart';
 import 'package:skills/widgets/investment_detail_card.dart';
 
@@ -36,7 +38,7 @@ class InvestmentHistory extends StatelessWidget {
                               fontWeight: FontWeight.w400, fontSize: 12),
                         ),
                         SizedBox(
-                          width: 7,
+                          width: 13,
                         ),
                         Text(
                           '|',
@@ -44,7 +46,7 @@ class InvestmentHistory extends StatelessWidget {
                               fontWeight: FontWeight.w200, fontSize: 12),
                         ),
                         SizedBox(
-                          width: 4,
+                          width: 13,
                         ),
                         Text(
                           'Total Returns',
