@@ -24,8 +24,8 @@ class MainWindow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: const EdgeInsets.only(
-            top: 22.5, right: 13.5, left: 13.5, bottom: 22.5),
+        padding:
+            const EdgeInsets.only(top: 30, right: 18, left: 18, bottom: 30),
         margin: const EdgeInsets.only(),
         decoration: BoxDecoration(
             borderRadius: value, color: color, border: Border.all(width: 0.1)),
@@ -44,7 +44,7 @@ class MainWindow extends StatelessWidget {
                     icon,
                     // color: colorrr,
                     height: 36,
-                    width: 36,
+                    width: 30,
                   ),
                   const SizedBox(
                     width: 3,
@@ -57,7 +57,7 @@ class MainWindow extends StatelessWidget {
                           maxLines: 1,
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
-                              fontSize: 15,
+                              fontSize: 14,
                               color: colorr),
                           overflow: TextOverflow.ellipsis,
                         ),
@@ -65,7 +65,7 @@ class MainWindow extends StatelessWidget {
                           text1,
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
-                              fontSize: 15,
+                              fontSize: 14,
                               color: colorr),
                         ),
                       ]),

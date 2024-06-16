@@ -1,33 +1,45 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class RoundedText extends StatelessWidget {
   final String buttonName;
   final Color buttonColor;
   final Color textColor;
+  final bool isSelected;
+  final VoidCallback onPressed;
 
   const RoundedText({
-    super.key,
     required this.buttonName,
     required this.buttonColor,
     required this.textColor,
+    required this.isSelected,
+    required this.onPressed,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 7.5, horizontal: 18),
-      decoration: BoxDecoration(
-        color: buttonColor,
-        borderRadius: BorderRadius.circular(75),
-      ),
-      child: Text(
-        buttonName,
-        style: TextStyle(
-          fontSize: 16,
-          fontWeight: FontWeight.w400,
-          color: textColor,
-        ),
-      ),
-    );
+    return Expanded(
+        child: GestureDetector(
+            onTap: onPressed,
+            child: Container(
+              padding: const EdgeInsets.symmetric(
+                vertical: 12,
+              ),
+              decoration: BoxDecoration(
+                color: isSelected ? buttonColor : Colors.transparent,
+                borderRadius: BorderRadius.circular(75),
+              ),
+              child: Center(
+                child: Text(
+                  buttonName,
+                  style: TextStyle(
+                    fontSize: 14,
+                    height: 1.8,
+                    fontWeight: FontWeight.w400,
+                    color: isSelected ? textColor : buttonColor,
+                  ),
+                ),
+              ),
+            )));
   }
 }

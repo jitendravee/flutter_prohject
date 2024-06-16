@@ -6,7 +6,7 @@ class TextTip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: const EdgeInsets.symmetric(horizontal: 21),
+        padding: const EdgeInsets.symmetric(horizontal: 23),
         child: Expanded(
             child: Center(
                 child: Column(
@@ -15,16 +15,15 @@ class TextTip extends StatelessWidget {
               text: const TextSpan(
                 text: 'Quick Tip:',
                 style: TextStyle(
-                  fontSize: 7.5,
+                  fontSize: 10,
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
                 children: <TextSpan>[
                   TextSpan(
                     text:
-                        ' Lorem ipsum dolor sit amet gdwug wgduw wewqg hsdjs consectetur. Lorem graa volutpat dui sollicitudin sociis feugiat diam to dui sollicitudin.',
-                    style:
-                        TextStyle(fontSize: 7.5, fontWeight: FontWeight.w300),
+                        ' Lorem  gdwug wgduw wewqg hsdjs consectetur. Lorem graa volutpat dui sollicitudin sociis feugiat diam to dui sollicitudin.',
+                    style: TextStyle(fontSize: 10, fontWeight: FontWeight.w300),
                   ),
                 ],
               ),

@@ -7,7 +7,7 @@ class InvestmentDetailCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 9),
+      padding: const EdgeInsets.symmetric(vertical: 10.5),
       decoration: const BoxDecoration(
           border: Border(bottom: BorderSide(width: 1, color: Colors.grey))),
       child: Column(
@@ -21,8 +21,8 @@ class InvestmentDetailCard extends StatelessWidget {
                 children: [
                   Image.asset(
                     'lib/images/logo.png',
-                    height: 21,
-                    width: 21,
+                    height: 25,
+                    width: 25,
                   ),
                   const SizedBox(width: 5),
                   Container(
@@ -30,7 +30,7 @@ class InvestmentDetailCard extends StatelessWidget {
                     child: const Text(
                       'lorem sjhdjs shia ashh asjdsajhd dhdskadjks oaskdkljsdkj jdkasjklfjfj',
                       style: TextStyle(
-                        fontSize: 7.5,
+                        fontSize: 10,
                         fontWeight: FontWeight.w500,
                       ),
                       maxLines: 2,
@@ -41,12 +41,12 @@ class InvestmentDetailCard extends StatelessWidget {
               ),
               const Text(
                 '₹2.78',
-                style: TextStyle(fontSize: 9, fontWeight: FontWeight.w500),
+                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
               ),
               const Text(
                 '+₹200',
                 style: TextStyle(
-                    fontSize: 9,
+                    fontSize: 12,
                     fontWeight: FontWeight.w700,
                     color: Pallete.purple1),
               ),
@@ -59,7 +59,7 @@ class InvestmentDetailCard extends StatelessWidget {
               padding: const EdgeInsets.only(left: 28),
               child: const Text(
                 'Qty: 20 | Invest: ₹20 ',
-                style: TextStyle(fontSize: 7.5, fontWeight: FontWeight.w300),
+                style: TextStyle(fontSize: 10, fontWeight: FontWeight.w300),
               ))
         ],
       ),

@@ -7,57 +7,59 @@ class InvestmentHistory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        padding: const EdgeInsets.symmetric(horizontal: 21, vertical: 18),
-        decoration: const BoxDecoration(
-            color: Pallete.white1,
-            borderRadius: BorderRadius.only(
-                topRight: Radius.circular(18), topLeft: Radius.circular(18))),
-        child: const Expanded(
-            child: SizedBox(
-          height: 300,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
+    return Expanded(
+        child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 24),
+            decoration: const BoxDecoration(
+                color: Pallete.white1,
+                borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(24),
+                    topLeft: Radius.circular(24))),
+            child: const SizedBox(
+              height: 368,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text(
-                    'Challenge Name',
-                    style: TextStyle(fontWeight: FontWeight.w400, fontSize: 13),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Challenge Name',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w400, fontSize: 12),
+                      ),
+                      Row(children: [
+                        Text(
+                          'Average',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w400, fontSize: 12),
+                        ),
+                        SizedBox(
+                          width: 7,
+                        ),
+                        Text(
+                          '|',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w200, fontSize: 12),
+                        ),
+                        SizedBox(
+                          width: 4,
+                        ),
+                        Text(
+                          'Total Returns',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w400, fontSize: 12),
+                        ),
+                      ])
+                    ],
                   ),
-                  Row(children: [
-                    Text(
-                      'Average',
-                      style:
-                          TextStyle(fontWeight: FontWeight.w400, fontSize: 13),
-                    ),
-                    SizedBox(
-                      width: 7,
-                    ),
-                    Text(
-                      '|',
-                      style:
-                          TextStyle(fontWeight: FontWeight.w200, fontSize: 13),
-                    ),
-                    SizedBox(
-                      width: 4,
-                    ),
-                    Text(
-                      'Total Returns',
-                      style:
-                          TextStyle(fontWeight: FontWeight.w400, fontSize: 12),
-                    ),
-                  ])
+                  InvestmentDetailCard(),
+                  InvestmentDetailCard(),
+                  InvestmentDetailCard(),
+                  InvestmentDetailCard(),
                 ],
               ),
-              InvestmentDetailCard(),
-              InvestmentDetailCard(),
-              InvestmentDetailCard(),
-              InvestmentDetailCard(),
-            ],
-          ),
-        )));
+            )));
   }
 }
